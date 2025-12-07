@@ -1,5 +1,5 @@
 import { useState, useEffect, Component } from 'react'
-import { TrendingUp, Wallet, DollarSign, AlertTriangle, Activity, Shield, LogOut } from 'lucide-react'
+import { TrendingUp, Wallet, DollarSign, AlertTriangle, Activity, Shield, LogOut, LayoutDashboard } from 'lucide-react'
 import io from 'socket.io-client'
 import HealthIndicator from './components/HealthIndicator'
 import Toast from './components/Toast'
