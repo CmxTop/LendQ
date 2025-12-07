@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: #e2e8f0;
+  /* slate-200 */
+  background-color: #0f172a;
+  /* slate-900 */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #0f172a;
+}
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(30, 41, 59, 0.7);
+    /* slate-800 with opacity */
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    /* slate-400 with low opacity */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .glass-panel-hover {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .glass-panel-hover:hover {
+    background: rgba(30, 41, 59, 0.9);
+    border-color: rgba(148, 163, 184, 0.2);
+    transform: translateY(-1px);
+  }
+
+  .btn-primary {
+    background-color: #f8fafc;
+    /* slate-50 */
+    color: #0f172a;
+    /* slate-900 */
+    transition: all 0.2s;
+  }
+
+  .btn-primary:hover {
+    background-color: #e2e8f0;
+    /* slate-200 */
+  }
+
+  .btn-secondary {
+    background-color: rgba(51, 65, 85, 0.5);
+    /* slate-700 */
+    color: #f8fafc;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    transition: all 0.2s;
+  }
+
+  .btn-secondary:hover {
+    background-color: rgba(51, 65, 85, 0.8);
+    border-color: rgba(148, 163, 184, 0.4);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out forwards;
+}

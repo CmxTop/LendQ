@@ -1,0 +1,26 @@
+node_modules
+.env
+EASYCONNECT_SETUP.md
+IMPLEMENTATION_PLAN.md
+LendQ_ImplementationPlan.md
+LendQ_ORIGINAL.md
+
+# Build
+dist/
+build/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+
+# Testing & Scripts
+server/repro-*.js
+# server/verify-*.js
+server/debug-*.js
+coverage/
+.vscode/
+.idea/

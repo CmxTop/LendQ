@@ -1,0 +1,259 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "wallet_address": "SUPPLIER_1",
+      "created_at": 1764972412094
+    },
+    {
+      "id": 2,
+      "wallet_address": "BORROWER_1",
+      "created_at": 1764972414200
+    },
+    {
+      "id": 3,
+      "wallet_address": "26528730930",
+      "created_at": 1764972551499
+    },
+    {
+      "id": 4,
+      "wallet_address": "1",
+      "created_at": 1764974081368
+    },
+    {
+      "id": 5,
+      "wallet_address": "2",
+      "created_at": 1764975505146
+    },
+    {
+      "id": 6,
+      "wallet_address": "TEST_NO_COLLATERAL",
+      "created_at": 1765032297370
+    },
+    {
+      "id": 7,
+      "wallet_address": "TEST_INSUFFICIENT",
+      "created_at": 1765032301089
+    }
+  ],
+  "assets": [
+    {
+      "id": 1,
+      "symbol": "QX",
+      "price_usd": 10,
+      "decimals": 8
+    },
+    {
+      "id": 2,
+      "symbol": "QUSD",
+      "price_usd": 1,
+      "decimals": 8
+    }
+  ],
+  "deposits": [
+    {
+      "id": 1,
+      "user_id": 2,
+      "asset_id": 1,
+      "amount": 100,
+      "created_at": 1764972414201
+    },
+    {
+      "id": 2,
+      "user_id": 3,
+      "asset_id": 1,
+      "amount": 100,
+      "created_at": 1764972829152
+    },
+    {
+      "id": 3,
+      "user_id": 3,
+      "asset_id": 1,
+      "amount": 666666665.9966667,
+      "created_at": 1764973532676
+    },
+    {
+      "id": 4,
+      "user_id": 4,
+      "asset_id": 1,
+      "amount": 1500,
+      "created_at": 1764974936188
+    },
+    {
+      "id": 5,
+      "user_id": 4,
+      "asset_id": 1,
+      "amount": 100,
+      "created_at": 1764974978406
+    },
+    {
+      "id": 6,
+      "user_id": 7,
+      "asset_id": 1,
+      "amount": 10,
+      "created_at": 1765032301093
+    }
+  ],
+  "supplies": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "amount": 1000,
+      "interest_earned": 0.17427179096905124,
+      "last_accrual_ts": 1765041110034,
+      "created_at": 1764972412094
+    },
+    {
+      "id": 2,
+      "user_id": 3,
+      "amount": 100,
+      "interest_earned": 0.017386638001014722,
+      "last_accrual_ts": 1765041110034,
+      "created_at": 1764972571907
+    },
+    {
+      "id": 3,
+      "user_id": 4,
+      "amount": 1000,
+      "interest_earned": 0.167631846778285,
+      "last_accrual_ts": 1765041110035,
+      "created_at": 1764975029561
+    }
+  ],
+  "loans": [
+    {
+      "id": 1,
+      "user_id": 2,
+      "asset_id": 2,
+      "principal": 500,
+      "interest_accrued": 0.10891452625570783,
+      "last_accrual_ts": 1765041110011,
+      "status": "active",
+      "created_at": 1764972415441
+    },
+    {
+      "id": 2,
+      "user_id": 3,
+      "asset_id": 2,
+      "principal": 300,
+      "interest_accrued": 0.06389481830289195,
+      "last_accrual_ts": 1765041110012,
+      "status": "active",
+      "created_at": 1764973943779
+    }
+  ],
+  "liquidity_pool": {
+    "total_supplied": 1800,
+    "total_borrowed": 800,
+    "available_liquidity": 1000,
+    "supply_apy": 0.08
+  },
+  "protocol_params": {
+    "id": 1,
+    "ltv_ratio": 0.75,
+    "liquidation_threshold": 0.85,
+    "borrow_apy": 0.1,
+    "supply_apy": 0.08,
+    "tick_seconds": 60
+  },
+  "events": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "type": "supply",
+      "metadata": "{\"amount\":1000}",
+      "created_at": 1764972412095
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "type": "deposit",
+      "metadata": "{\"assetSymbol\":\"QX\",\"amount\":100}",
+      "created_at": 1764972414202
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "type": "borrow",
+      "metadata": "{\"amount\":500}",
+      "created_at": 1764972415443
+    },
+    {
+      "id": 4,
+      "user_id": 1,
+      "type": "withdraw",
+      "metadata": "{\"amount\":200}",
+      "created_at": 1764972417872
+    },
+    {
+      "id": 5,
+      "user_id": 3,
+      "type": "supply",
+      "metadata": "{\"amount\":100}",
+      "created_at": 1764972571908
+    },
+    {
+      "id": 6,
+      "user_id": 3,
+      "type": "withdraw",
+      "metadata": "{\"amount\":100}",
+      "created_at": 1764972757708
+    },
+    {
+      "id": 7,
+      "user_id": 3,
+      "type": "deposit",
+      "metadata": "{\"assetSymbol\":\"QX\",\"amount\":100}",
+      "created_at": 1764972829152
+    },
+    {
+      "id": 8,
+      "user_id": 3,
+      "type": "deposit",
+      "metadata": "{\"assetSymbol\":\"QX\",\"amount\":666666665.9966667}",
+      "created_at": 1764973532677
+    },
+    {
+      "id": 9,
+      "user_id": 3,
+      "type": "borrow",
+      "metadata": "{\"amount\":300}",
+      "created_at": 1764973943782
+    },
+    {
+      "id": 10,
+      "user_id": 4,
+      "type": "deposit",
+      "metadata": "{\"assetSymbol\":\"QX\",\"amount\":1500}",
+      "created_at": 1764974936189
+    },
+    {
+      "id": 11,
+      "user_id": 4,
+      "type": "deposit",
+      "metadata": "{\"assetSymbol\":\"QX\",\"amount\":100}",
+      "created_at": 1764974978410
+    },
+    {
+      "id": 12,
+      "user_id": 4,
+      "type": "supply",
+      "metadata": "{\"amount\":1000}",
+      "created_at": 1764975029561
+    },
+    {
+      "id": 13,
+      "user_id": 7,
+      "type": "deposit",
+      "metadata": "{\"assetSymbol\":\"QX\",\"amount\":10}",
+      "created_at": 1765032301094
+    }
+  ],
+  "counters": {
+    "users": 7,
+    "deposits": 6,
+    "supplies": 3,
+    "loans": 2,
+    "events": 13
+  }
+}
